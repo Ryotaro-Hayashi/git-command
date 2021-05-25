@@ -18,6 +18,10 @@ git add -A
 ```
 git reset ファイル名
 ```
+指定したファイルをワーキングツリーに復元
+```
+git restore ファイル名
+```
 コミットする
 ```
 git commit -m "commit message"
@@ -45,6 +49,18 @@ git diff
 コミット間の差分を表示
 ```
 git diff <コミットID> <コミットID>
+```
+コミット間で差分のあるファイル一覧を表示
+```
+git diff --name-only <コミットID> <コミットID>
+```
+ファイルを指定してコミット間の差分を表示
+```
+git diff <コミットID> <コミットID> <ファイル名>
+```
+リモートブランチとの差分を表示する
+```
+git diff <リモートブランチ(ex: origin/master)>
 ```
 ブランチを作成
 ```
